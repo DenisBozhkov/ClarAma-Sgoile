@@ -1,0 +1,143 @@
+EXPORTS
+    _ZN7Service10Controller7SaveAllEv @1
+    _ZN7Service10ControllerC1Ev @2
+    _ZN7Service10ControllerC2Ev @3
+    _ZN7Service10ControllerD1Ev @4
+    _ZN7Service10ControllerD2Ev @5
+    _ZTCN6Models22MultiClassSubjectModelE48_NS_17ClassSubjectModelE @6 DATA
+    _ZTIN10Structures8ModelSetIjN6Models10ClassModelEEE @7 DATA
+    _ZTIN10Structures8ModelSetIjN6Models12SubjectModelEEE @8 DATA
+    _ZTIN10Structures8ModelSetIjN6Models12TeacherModelEEE @9 DATA
+    _ZTIN10Structures8ModelSetIjN6Models17SubjectGroupModelEEE @10 DATA
+    _ZTIN10Structures8ModelSetIjN6Models22MultiClassSubjectModelEEE @11 DATA
+    _ZTIN10Structures8ModelSetIjN6Models9RoomModelEEE @12 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models10ClassModelEN10Structures8ModelSetIjS2_EEEE @13 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models12SubjectModelEN10Structures8ModelSetIjS2_EEEE @14 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models12TeacherModelEN10Structures8ModelSetIjS2_EEEE @15 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models17SubjectGroupModelEN10Structures8ModelSetIjS2_EEEE @16 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models22MultiClassSubjectModelEN10Structures8ModelSetIjS2_EEEE @17 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models9RoomModelEN10Structures8ModelSetIjS2_EEEE @18 DATA
+    _ZTIN12DataManagers12RoomsManagerE @19 DATA
+    _ZTIN12DataManagers14ClassesManagerE @20 DATA
+    _ZTIN12DataManagers15SubjectsManagerE @21 DATA
+    _ZTIN12DataManagers15TeachersManagerE @22 DATA
+    _ZTIN12DataManagers20SubjectGroupsManagerE @23 DATA
+    _ZTIN12DataManagers25MultiClassSubjectsManagerE @24 DATA
+    _ZTIN6Models10ClassModelE @25 DATA
+    _ZTIN6Models12SubjectModelE @26 DATA
+    _ZTIN6Models12TeacherModelE @27 DATA
+    _ZTIN6Models17ClassSubjectModelE @28 DATA
+    _ZTIN6Models17SubjectGroupModelE @29 DATA
+    _ZTIN6Models22MultiClassSubjectModelE @30 DATA
+    _ZTIN6Models9RoomModelE @31 DATA
+    _ZTTN6Models17ClassSubjectModelE @32 DATA
+    _ZTTN6Models22MultiClassSubjectModelE @33 DATA
+    _ZTVN10Structures8ModelSetIjN6Models10ClassModelEEE @34 DATA
+    _ZTVN10Structures8ModelSetIjN6Models12SubjectModelEEE @35 DATA
+    _ZTVN10Structures8ModelSetIjN6Models12TeacherModelEEE @36 DATA
+    _ZTVN10Structures8ModelSetIjN6Models17SubjectGroupModelEEE @37 DATA
+    _ZTVN10Structures8ModelSetIjN6Models22MultiClassSubjectModelEEE @38 DATA
+    _ZTVN10Structures8ModelSetIjN6Models9RoomModelEEE @39 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models10ClassModelEN10Structures8ModelSetIjS2_EEEE @40 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models12SubjectModelEN10Structures8ModelSetIjS2_EEEE @41 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models12TeacherModelEN10Structures8ModelSetIjS2_EEEE @42 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models17SubjectGroupModelEN10Structures8ModelSetIjS2_EEEE @43 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models22MultiClassSubjectModelEN10Structures8ModelSetIjS2_EEEE @44 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models9RoomModelEN10Structures8ModelSetIjS2_EEEE @45 DATA
+    _ZTVN6Models10ClassModelE @46 DATA
+    _ZTVN6Models12SubjectModelE @47 DATA
+    _ZTVN6Models12TeacherModelE @48 DATA
+    _ZTVN6Models17ClassSubjectModelE @49 DATA
+    _ZTVN6Models17SubjectGroupModelE @50 DATA
+    _ZTVN6Models22MultiClassSubjectModelE @51 DATA
+    _ZTVN6Models9RoomModelE @52 DATA
+
+IMPORTS
+
+    DataManagers.dll._ZN12DataManagers10SchoolData4ReadEv
+    DataManagers.dll._ZN12DataManagers10SchoolData4SaveEv
+    DataManagers.dll._ZN12DataManagers12IDataManagerIjN6Models10ClassModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E
+    DataManagers.dll._ZN12DataManagers12IDataManagerIjN6Models12SubjectModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E
+    DataManagers.dll._ZN12DataManagers12IDataManagerIjN6Models12TeacherModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E
+    DataManagers.dll._ZN12DataManagers12IDataManagerIjN6Models17SubjectGroupModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E
+    DataManagers.dll._ZN12DataManagers12IDataManagerIjN6Models22MultiClassSubjectModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E
+    DataManagers.dll._ZN12DataManagers12IDataManagerIjN6Models9RoomModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E
+    DataManagers.dll._ZN12DataManagers12RoomsManager4ReadEv
+    DataManagers.dll._ZN12DataManagers12RoomsManager4SaveEv
+    DataManagers.dll._ZN12DataManagers14ClassesManager4ReadEv
+    DataManagers.dll._ZN12DataManagers14ClassesManager4SaveEv
+    DataManagers.dll._ZN12DataManagers14ClassesManagerC1ERNS_15SubjectsManagerERNS_15TeachersManagerERNS_12RoomsManagerE
+    DataManagers.dll._ZN12DataManagers14ClassesManagerC2ERNS_15SubjectsManagerERNS_15TeachersManagerERNS_12RoomsManagerE
+    DataManagers.dll._ZN12DataManagers15SubjectsManager4ReadEv
+    DataManagers.dll._ZN12DataManagers15SubjectsManager4SaveEv
+    DataManagers.dll._ZN12DataManagers15SubjectsManagerC1ERNS_20SubjectGroupsManagerE
+    DataManagers.dll._ZN12DataManagers15SubjectsManagerC2ERNS_20SubjectGroupsManagerE
+    DataManagers.dll._ZN12DataManagers15TeachersManager4ReadEv
+    DataManagers.dll._ZN12DataManagers15TeachersManager4SaveEv
+    DataManagers.dll._ZN12DataManagers15TeachersManagerC1ERNS_10SchoolDataE
+    DataManagers.dll._ZN12DataManagers15TeachersManagerC2ERNS_10SchoolDataE
+    DataManagers.dll._ZN12DataManagers20SubjectGroupsManager4ReadEv
+    DataManagers.dll._ZN12DataManagers20SubjectGroupsManager4SaveEv
+    DataManagers.dll._ZN12DataManagers25MultiClassSubjectsManager4ReadEv
+    DataManagers.dll._ZN12DataManagers25MultiClassSubjectsManager4SaveEv
+    DataManagers.dll._ZN12DataManagers25MultiClassSubjectsManagerC1ERNS_14ClassesManagerERNS_15SubjectsManagerERNS_15TeachersManagerERNS_12RoomsManagerE
+    DataManagers.dll._ZN12DataManagers25MultiClassSubjectsManagerC2ERNS_14ClassesManagerERNS_15SubjectsManagerERNS_15TeachersManagerERNS_12RoomsManagerE
+    DataManagers.dll._ZN6Models10ClassModel6nextIdE
+    DataManagers.dll._ZN6Models12SubjectModel6nextIdE
+    DataManagers.dll._ZN6Models12TeacherModel6nextIdE
+    DataManagers.dll._ZN6Models17SubjectGroupModel6nextIdE
+    DataManagers.dll._ZN6Models22MultiClassSubjectModel6nextIdE
+    DataManagers.dll._ZN6Models9RoomModel6nextIdE
+    DataManagers.dll._ZTCN6Models22MultiClassSubjectModelE48_NS_17ClassSubjectModelE
+    DataManagers.dll._ZTIN10Structures8ModelSetIjN6Models10ClassModelEEE
+    DataManagers.dll._ZTIN10Structures8ModelSetIjN6Models12SubjectModelEEE
+    DataManagers.dll._ZTIN10Structures8ModelSetIjN6Models12TeacherModelEEE
+    DataManagers.dll._ZTIN10Structures8ModelSetIjN6Models17SubjectGroupModelEEE
+    DataManagers.dll._ZTIN10Structures8ModelSetIjN6Models22MultiClassSubjectModelEEE
+    DataManagers.dll._ZTIN10Structures8ModelSetIjN6Models9RoomModelEEE
+    DataManagers.dll._ZTIN12DataManagers12IDataManagerIjN6Models10ClassModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTIN12DataManagers12IDataManagerIjN6Models12SubjectModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTIN12DataManagers12IDataManagerIjN6Models12TeacherModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTIN12DataManagers12IDataManagerIjN6Models17SubjectGroupModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTIN12DataManagers12IDataManagerIjN6Models22MultiClassSubjectModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTIN12DataManagers12IDataManagerIjN6Models9RoomModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTIN12DataManagers12RoomsManagerE
+    DataManagers.dll._ZTIN12DataManagers14ClassesManagerE
+    DataManagers.dll._ZTIN12DataManagers15SubjectsManagerE
+    DataManagers.dll._ZTIN12DataManagers15TeachersManagerE
+    DataManagers.dll._ZTIN12DataManagers20SubjectGroupsManagerE
+    DataManagers.dll._ZTIN12DataManagers25MultiClassSubjectsManagerE
+    DataManagers.dll._ZTIN6Models10ClassModelE
+    DataManagers.dll._ZTIN6Models12SubjectModelE
+    DataManagers.dll._ZTIN6Models12TeacherModelE
+    DataManagers.dll._ZTIN6Models17ClassSubjectModelE
+    DataManagers.dll._ZTIN6Models17SubjectGroupModelE
+    DataManagers.dll._ZTIN6Models22MultiClassSubjectModelE
+    DataManagers.dll._ZTIN6Models9RoomModelE
+    DataManagers.dll._ZTTN6Models17ClassSubjectModelE
+    DataManagers.dll._ZTTN6Models22MultiClassSubjectModelE
+    DataManagers.dll._ZTVN10Structures8ModelSetIjN6Models10ClassModelEEE
+    DataManagers.dll._ZTVN10Structures8ModelSetIjN6Models12SubjectModelEEE
+    DataManagers.dll._ZTVN10Structures8ModelSetIjN6Models12TeacherModelEEE
+    DataManagers.dll._ZTVN10Structures8ModelSetIjN6Models17SubjectGroupModelEEE
+    DataManagers.dll._ZTVN10Structures8ModelSetIjN6Models22MultiClassSubjectModelEEE
+    DataManagers.dll._ZTVN10Structures8ModelSetIjN6Models9RoomModelEEE
+    DataManagers.dll._ZTVN12DataManagers12IDataManagerIjN6Models10ClassModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTVN12DataManagers12IDataManagerIjN6Models12SubjectModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTVN12DataManagers12IDataManagerIjN6Models12TeacherModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTVN12DataManagers12IDataManagerIjN6Models17SubjectGroupModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTVN12DataManagers12IDataManagerIjN6Models22MultiClassSubjectModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTVN12DataManagers12IDataManagerIjN6Models9RoomModelEN10Structures8ModelSetIjS2_EEEE
+    DataManagers.dll._ZTVN12DataManagers12RoomsManagerE
+    DataManagers.dll._ZTVN12DataManagers14ClassesManagerE
+    DataManagers.dll._ZTVN12DataManagers15SubjectsManagerE
+    DataManagers.dll._ZTVN12DataManagers15TeachersManagerE
+    DataManagers.dll._ZTVN12DataManagers20SubjectGroupsManagerE
+    DataManagers.dll._ZTVN12DataManagers25MultiClassSubjectsManagerE
+    DataManagers.dll._ZTVN6Models10ClassModelE
+    DataManagers.dll._ZTVN6Models12SubjectModelE
+    DataManagers.dll._ZTVN6Models12TeacherModelE
+    DataManagers.dll._ZTVN6Models17ClassSubjectModelE
+    DataManagers.dll._ZTVN6Models17SubjectGroupModelE
+    DataManagers.dll._ZTVN6Models22MultiClassSubjectModelE
+    DataManagers.dll._ZTVN6Models9RoomModelE

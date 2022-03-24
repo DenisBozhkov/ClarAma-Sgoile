@@ -1,0 +1,88 @@
+EXPORTS
+    _ZN12DataManagers10SchoolData4ReadEv @1
+    _ZN12DataManagers10SchoolData4SaveEv @2
+    _ZN12DataManagers12IDataManagerIjN6Models10ClassModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E @3 DATA
+    _ZN12DataManagers12IDataManagerIjN6Models12SubjectModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E @4 DATA
+    _ZN12DataManagers12IDataManagerIjN6Models12TeacherModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E @5 DATA
+    _ZN12DataManagers12IDataManagerIjN6Models17SubjectGroupModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E @6 DATA
+    _ZN12DataManagers12IDataManagerIjN6Models22MultiClassSubjectModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E @7 DATA
+    _ZN12DataManagers12IDataManagerIjN6Models9RoomModelEN10Structures8ModelSetIjS2_EEE7saveDirB5cxx11E @8 DATA
+    _ZN12DataManagers12RoomsManager4ReadEv @9
+    _ZN12DataManagers12RoomsManager4SaveEv @10
+    _ZN12DataManagers14ClassesManager4ReadEv @11
+    _ZN12DataManagers14ClassesManager4SaveEv @12
+    _ZN12DataManagers14ClassesManagerC1ERNS_15SubjectsManagerERNS_15TeachersManagerERNS_12RoomsManagerE @13
+    _ZN12DataManagers14ClassesManagerC2ERNS_15SubjectsManagerERNS_15TeachersManagerERNS_12RoomsManagerE @14
+    _ZN12DataManagers15SubjectsManager4ReadEv @15
+    _ZN12DataManagers15SubjectsManager4SaveEv @16
+    _ZN12DataManagers15SubjectsManagerC1ERNS_20SubjectGroupsManagerE @17
+    _ZN12DataManagers15SubjectsManagerC2ERNS_20SubjectGroupsManagerE @18
+    _ZN12DataManagers15TeachersManager4ReadEv @19
+    _ZN12DataManagers15TeachersManager4SaveEv @20
+    _ZN12DataManagers15TeachersManagerC1ERNS_10SchoolDataE @21
+    _ZN12DataManagers15TeachersManagerC2ERNS_10SchoolDataE @22
+    _ZN12DataManagers20SubjectGroupsManager4ReadEv @23
+    _ZN12DataManagers20SubjectGroupsManager4SaveEv @24
+    _ZN12DataManagers25MultiClassSubjectsManager4ReadEv @25
+    _ZN12DataManagers25MultiClassSubjectsManager4SaveEv @26
+    _ZN12DataManagers25MultiClassSubjectsManagerC1ERNS_14ClassesManagerERNS_15SubjectsManagerERNS_15TeachersManagerERNS_12RoomsManagerE @27
+    _ZN12DataManagers25MultiClassSubjectsManagerC2ERNS_14ClassesManagerERNS_15SubjectsManagerERNS_15TeachersManagerERNS_12RoomsManagerE @28
+    _ZN6Models10ClassModel6nextIdE @29 DATA
+    _ZN6Models12SubjectModel6nextIdE @30 DATA
+    _ZN6Models12TeacherModel6nextIdE @31 DATA
+    _ZN6Models17SubjectGroupModel6nextIdE @32 DATA
+    _ZN6Models22MultiClassSubjectModel6nextIdE @33 DATA
+    _ZN6Models9RoomModel6nextIdE @34 DATA
+    _ZTCN6Models22MultiClassSubjectModelE48_NS_17ClassSubjectModelE @35 DATA
+    _ZTIN10Structures8ModelSetIjN6Models10ClassModelEEE @36 DATA
+    _ZTIN10Structures8ModelSetIjN6Models12SubjectModelEEE @37 DATA
+    _ZTIN10Structures8ModelSetIjN6Models12TeacherModelEEE @38 DATA
+    _ZTIN10Structures8ModelSetIjN6Models17SubjectGroupModelEEE @39 DATA
+    _ZTIN10Structures8ModelSetIjN6Models22MultiClassSubjectModelEEE @40 DATA
+    _ZTIN10Structures8ModelSetIjN6Models9RoomModelEEE @41 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models10ClassModelEN10Structures8ModelSetIjS2_EEEE @42 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models12SubjectModelEN10Structures8ModelSetIjS2_EEEE @43 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models12TeacherModelEN10Structures8ModelSetIjS2_EEEE @44 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models17SubjectGroupModelEN10Structures8ModelSetIjS2_EEEE @45 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models22MultiClassSubjectModelEN10Structures8ModelSetIjS2_EEEE @46 DATA
+    _ZTIN12DataManagers12IDataManagerIjN6Models9RoomModelEN10Structures8ModelSetIjS2_EEEE @47 DATA
+    _ZTIN12DataManagers12RoomsManagerE @48 DATA
+    _ZTIN12DataManagers14ClassesManagerE @49 DATA
+    _ZTIN12DataManagers15SubjectsManagerE @50 DATA
+    _ZTIN12DataManagers15TeachersManagerE @51 DATA
+    _ZTIN12DataManagers20SubjectGroupsManagerE @52 DATA
+    _ZTIN12DataManagers25MultiClassSubjectsManagerE @53 DATA
+    _ZTIN6Models10ClassModelE @54 DATA
+    _ZTIN6Models12SubjectModelE @55 DATA
+    _ZTIN6Models12TeacherModelE @56 DATA
+    _ZTIN6Models17ClassSubjectModelE @57 DATA
+    _ZTIN6Models17SubjectGroupModelE @58 DATA
+    _ZTIN6Models22MultiClassSubjectModelE @59 DATA
+    _ZTIN6Models9RoomModelE @60 DATA
+    _ZTTN6Models17ClassSubjectModelE @61 DATA
+    _ZTTN6Models22MultiClassSubjectModelE @62 DATA
+    _ZTVN10Structures8ModelSetIjN6Models10ClassModelEEE @63 DATA
+    _ZTVN10Structures8ModelSetIjN6Models12SubjectModelEEE @64 DATA
+    _ZTVN10Structures8ModelSetIjN6Models12TeacherModelEEE @65 DATA
+    _ZTVN10Structures8ModelSetIjN6Models17SubjectGroupModelEEE @66 DATA
+    _ZTVN10Structures8ModelSetIjN6Models22MultiClassSubjectModelEEE @67 DATA
+    _ZTVN10Structures8ModelSetIjN6Models9RoomModelEEE @68 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models10ClassModelEN10Structures8ModelSetIjS2_EEEE @69 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models12SubjectModelEN10Structures8ModelSetIjS2_EEEE @70 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models12TeacherModelEN10Structures8ModelSetIjS2_EEEE @71 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models17SubjectGroupModelEN10Structures8ModelSetIjS2_EEEE @72 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models22MultiClassSubjectModelEN10Structures8ModelSetIjS2_EEEE @73 DATA
+    _ZTVN12DataManagers12IDataManagerIjN6Models9RoomModelEN10Structures8ModelSetIjS2_EEEE @74 DATA
+    _ZTVN12DataManagers12RoomsManagerE @75 DATA
+    _ZTVN12DataManagers14ClassesManagerE @76 DATA
+    _ZTVN12DataManagers15SubjectsManagerE @77 DATA
+    _ZTVN12DataManagers15TeachersManagerE @78 DATA
+    _ZTVN12DataManagers20SubjectGroupsManagerE @79 DATA
+    _ZTVN12DataManagers25MultiClassSubjectsManagerE @80 DATA
+    _ZTVN6Models10ClassModelE @81 DATA
+    _ZTVN6Models12SubjectModelE @82 DATA
+    _ZTVN6Models12TeacherModelE @83 DATA
+    _ZTVN6Models17ClassSubjectModelE @84 DATA
+    _ZTVN6Models17SubjectGroupModelE @85 DATA
+    _ZTVN6Models22MultiClassSubjectModelE @86 DATA
+    _ZTVN6Models9RoomModelE @87 DATA
