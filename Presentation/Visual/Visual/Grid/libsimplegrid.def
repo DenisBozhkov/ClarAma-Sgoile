@@ -1,0 +1,3 @@
+EXPORTS
+    InitSimpleGrid @1
+    New_SimpleGrid @2

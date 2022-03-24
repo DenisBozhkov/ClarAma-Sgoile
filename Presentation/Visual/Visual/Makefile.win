@@ -1,0 +1,66 @@
+# Project: Visual
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Headers/Classes/Source/Button.o Headers/Classes/Source/Label.o Headers/Classes/Source/Container.o Headers/Classes/Source/NamedContainer.o Headers/Classes/Source/Window.o Headers/Classes/Source/Edit.o Headers/Classes/Source/Checkbox.o Headers/Classes/Source/RadioButton.o Headers/Classes/Source/RadioButtonGroup.o Headers/Classes/Source/ListBox.o Headers/Classes/Source/MultiListBox.o Headers/Classes/Source/ComboBox.o Headers/Classes/Source/NumberEdit.o
+LINKOBJ  = Headers/Classes/Source/Button.o Headers/Classes/Source/Label.o Headers/Classes/Source/Container.o Headers/Classes/Source/NamedContainer.o Headers/Classes/Source/Window.o Headers/Classes/Source/Edit.o Headers/Classes/Source/Checkbox.o Headers/Classes/Source/RadioButton.o Headers/Classes/Source/RadioButtonGroup.o Headers/Classes/Source/ListBox.o Headers/Classes/Source/MultiListBox.o Headers/Classes/Source/ComboBox.o Headers/Classes/Source/NumberEdit.o
+LIBS     = -L"D:/downloads/Dev-Cpp/TDM-GCC-64/lib" -L"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -Wl,--stack,268435456 -lwinmm -lgdi32 -luxtheme -lcomctl32
+INCS     = -I"D:/downloads/Dev-Cpp/TDM-GCC-64/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual/Headers/Interfaces" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual/Headers/Classes/Headers"
+CXXINCS  = -I"D:/downloads/Dev-Cpp/TDM-GCC-64/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual/Headers/Interfaces" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual/Headers/Classes/Headers"
+BIN      = ../../../_Executable/Visual.dll
+CXXFLAGS = $(CXXINCS) -std=gnu++2a -DBUILDING_DLL=1
+CFLAGS   = $(INCS) -std=gnu++2a -DBUILDING_DLL=1
+DEL      = D:\downloads\Dev-Cpp\devcpp.exe INTERNAL_DEL
+DEF      = ../../../_Executable/libVisual.def
+STATIC   = ../../../_Executable/libVisual.a
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN) $(DEF) $(STATIC)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) -shared $(LINKOBJ) -o $(BIN) $(LIBS) -Wl,--output-def,$(DEF),--out-implib,$(STATIC),--add-stdcall-alias
+
+Headers/Classes/Source/Button.o: Headers/Classes/Source/Button.cpp
+	$(CPP) -c Headers/Classes/Source/Button.cpp -o Headers/Classes/Source/Button.o $(CXXFLAGS)
+
+Headers/Classes/Source/Label.o: Headers/Classes/Source/Label.cpp
+	$(CPP) -c Headers/Classes/Source/Label.cpp -o Headers/Classes/Source/Label.o $(CXXFLAGS)
+
+Headers/Classes/Source/Container.o: Headers/Classes/Source/Container.cpp
+	$(CPP) -c Headers/Classes/Source/Container.cpp -o Headers/Classes/Source/Container.o $(CXXFLAGS)
+
+Headers/Classes/Source/NamedContainer.o: Headers/Classes/Source/NamedContainer.cpp
+	$(CPP) -c Headers/Classes/Source/NamedContainer.cpp -o Headers/Classes/Source/NamedContainer.o $(CXXFLAGS)
+
+Headers/Classes/Source/Window.o: Headers/Classes/Source/Window.cpp
+	$(CPP) -c Headers/Classes/Source/Window.cpp -o Headers/Classes/Source/Window.o $(CXXFLAGS)
+
+Headers/Classes/Source/Edit.o: Headers/Classes/Source/Edit.cpp
+	$(CPP) -c Headers/Classes/Source/Edit.cpp -o Headers/Classes/Source/Edit.o $(CXXFLAGS)
+
+Headers/Classes/Source/Checkbox.o: Headers/Classes/Source/Checkbox.cpp
+	$(CPP) -c Headers/Classes/Source/Checkbox.cpp -o Headers/Classes/Source/Checkbox.o $(CXXFLAGS)
+
+Headers/Classes/Source/RadioButton.o: Headers/Classes/Source/RadioButton.cpp
+	$(CPP) -c Headers/Classes/Source/RadioButton.cpp -o Headers/Classes/Source/RadioButton.o $(CXXFLAGS)
+
+Headers/Classes/Source/RadioButtonGroup.o: Headers/Classes/Source/RadioButtonGroup.cpp
+	$(CPP) -c Headers/Classes/Source/RadioButtonGroup.cpp -o Headers/Classes/Source/RadioButtonGroup.o $(CXXFLAGS)
+
+Headers/Classes/Source/ListBox.o: Headers/Classes/Source/ListBox.cpp
+	$(CPP) -c Headers/Classes/Source/ListBox.cpp -o Headers/Classes/Source/ListBox.o $(CXXFLAGS)
+
+Headers/Classes/Source/MultiListBox.o: Headers/Classes/Source/MultiListBox.cpp
+	$(CPP) -c Headers/Classes/Source/MultiListBox.cpp -o Headers/Classes/Source/MultiListBox.o $(CXXFLAGS)
+
+Headers/Classes/Source/ComboBox.o: Headers/Classes/Source/ComboBox.cpp
+	$(CPP) -c Headers/Classes/Source/ComboBox.cpp -o Headers/Classes/Source/ComboBox.o $(CXXFLAGS)
+
+Headers/Classes/Source/NumberEdit.o: Headers/Classes/Source/NumberEdit.cpp
+	$(CPP) -c Headers/Classes/Source/NumberEdit.cpp -o Headers/Classes/Source/NumberEdit.o $(CXXFLAGS)
