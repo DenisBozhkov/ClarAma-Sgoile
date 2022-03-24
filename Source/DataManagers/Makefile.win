@@ -1,0 +1,56 @@
+# Project: DataManagers
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = ../_obj/DataManagers_private.res
+OBJ      = ../_obj/ClassesManager.o ../_obj/MultiClassSubjectsManager.o ../_obj/RoomsManager.o ../_obj/SchoolData.o ../_obj/SubjectGroupsManager.o ../_obj/SubjectsManager.o ../_obj/TeachersManager.o ../_obj/Test.o $(RES)
+LINKOBJ  = ../_obj/ClassesManager.o ../_obj/MultiClassSubjectsManager.o ../_obj/RoomsManager.o ../_obj/SchoolData.o ../_obj/SubjectGroupsManager.o ../_obj/SubjectsManager.o ../_obj/TeachersManager.o ../_obj/Test.o $(RES)
+LIBS     = -L"D:/downloads/Dev-Cpp/TDM-GCC-64/lib" -L"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -Wl,--stack,268435456
+INCS     = -I"D:/downloads/Dev-Cpp/TDM-GCC-64/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Lenovo 330/Desktop/FinalProject2" -I"D:/Lenovo 330/Desktop/FinalProject2/Functions" -I"D:/Lenovo 330/Desktop/FinalProject2/DataManagers" -I"D:/Lenovo 330/Desktop/FinalProject2/Models" -I"D:/Lenovo 330/Desktop/FinalProject2/Structures"
+CXXINCS  = -I"D:/downloads/Dev-Cpp/TDM-GCC-64/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"D:/Lenovo 330/Desktop/FinalProject2" -I"D:/Lenovo 330/Desktop/FinalProject2/Functions" -I"D:/Lenovo 330/Desktop/FinalProject2/DataManagers" -I"D:/Lenovo 330/Desktop/FinalProject2/Models" -I"D:/Lenovo 330/Desktop/FinalProject2/Structures"
+BIN      = ../../_Executable/DataManagers.dll
+CXXFLAGS = $(CXXINCS) -std=gnu++2a
+CFLAGS   = $(INCS) -std=gnu++2a
+DEL      = D:\downloads\Dev-Cpp\devcpp.exe INTERNAL_DEL
+DEF      = ../../_Executable/libDataManagers.def
+STATIC   = ../../_Executable/libDataManagers.a
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN) $(DEF) $(STATIC)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) -shared $(LINKOBJ) -o $(BIN) $(LIBS) -Wl,--output-def,$(DEF),--out-implib,$(STATIC),--add-stdcall-alias
+
+../_obj/ClassesManager.o: Source/ClassesManager.cpp
+	$(CPP) -c Source/ClassesManager.cpp -o ../_obj/ClassesManager.o $(CXXFLAGS)
+
+../_obj/MultiClassSubjectsManager.o: Source/MultiClassSubjectsManager.cpp
+	$(CPP) -c Source/MultiClassSubjectsManager.cpp -o ../_obj/MultiClassSubjectsManager.o $(CXXFLAGS)
+
+../_obj/RoomsManager.o: Source/RoomsManager.cpp
+	$(CPP) -c Source/RoomsManager.cpp -o ../_obj/RoomsManager.o $(CXXFLAGS)
+
+../_obj/SchoolData.o: Source/SchoolData.cpp
+	$(CPP) -c Source/SchoolData.cpp -o ../_obj/SchoolData.o $(CXXFLAGS)
+
+../_obj/SubjectGroupsManager.o: Source/SubjectGroupsManager.cpp
+	$(CPP) -c Source/SubjectGroupsManager.cpp -o ../_obj/SubjectGroupsManager.o $(CXXFLAGS)
+
+../_obj/SubjectsManager.o: Source/SubjectsManager.cpp
+	$(CPP) -c Source/SubjectsManager.cpp -o ../_obj/SubjectsManager.o $(CXXFLAGS)
+
+../_obj/TeachersManager.o: Source/TeachersManager.cpp
+	$(CPP) -c Source/TeachersManager.cpp -o ../_obj/TeachersManager.o $(CXXFLAGS)
+
+../_obj/Test.o: Source/Test/Test.cpp
+	$(CPP) -c Source/Test/Test.cpp -o ../_obj/Test.o $(CXXFLAGS)
+
+../_obj/DataManagers_private.res: DataManagers_private.rc 
+	$(WINDRES) -i DataManagers_private.rc --input-format=rc -o ../_obj/DataManagers_private.res -O coff 
+

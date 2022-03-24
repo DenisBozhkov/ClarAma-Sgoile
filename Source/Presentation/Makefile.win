@@ -1,0 +1,51 @@
+# Project: Presentation
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = ../_obj/Presentation_private.res
+OBJ      = ../_obj/RoomsWindow.o ../_obj/Presentation.o ../_obj/GlobalWindow.o ../_obj/SubjectGroupsWindow.o ../_obj/TeachersWindow.o ../_obj/SubjectsWindow.o ../_obj/ClassesWindow.o $(RES)
+LINKOBJ  = ../_obj/RoomsWindow.o ../_obj/Presentation.o ../_obj/GlobalWindow.o ../_obj/SubjectGroupsWindow.o ../_obj/TeachersWindow.o ../_obj/SubjectsWindow.o ../_obj/ClassesWindow.o $(RES)
+LIBS     = -L"D:/downloads/Dev-Cpp/TDM-GCC-64/lib" -L"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -Wl,--stack,268435456 -mwindows ../../_Executable/DataManagers.dll ../../_Executable/Service.dll ../../_Executable/Visual.dll -g3
+INCS     = -I"D:/downloads/Dev-Cpp/TDM-GCC-64/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Lenovo 330/Desktop/FinalProject2" -I"D:/Lenovo 330/Desktop/FinalProject2/DataManagers" -I"D:/Lenovo 330/Desktop/FinalProject2/Functions" -I"D:/Lenovo 330/Desktop/FinalProject2/Models" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation" -I"D:/Lenovo 330/Desktop/FinalProject2/Service" -I"D:/Lenovo 330/Desktop/FinalProject2/Structures" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual/Headers/Classes/Headers" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual/Headers/Interfaces"
+CXXINCS  = -I"D:/downloads/Dev-Cpp/TDM-GCC-64/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"D:/Lenovo 330/Desktop/FinalProject2" -I"D:/Lenovo 330/Desktop/FinalProject2/DataManagers" -I"D:/Lenovo 330/Desktop/FinalProject2/Functions" -I"D:/Lenovo 330/Desktop/FinalProject2/Models" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation" -I"D:/Lenovo 330/Desktop/FinalProject2/Service" -I"D:/Lenovo 330/Desktop/FinalProject2/Structures" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual/Headers/Classes/Headers" -I"D:/Lenovo 330/Desktop/FinalProject2/Presentation/Visual/Visual/Headers/Interfaces"
+BIN      = ../../_Executable/Presentation.exe
+CXXFLAGS = $(CXXINCS) -std=gnu++2a -g3
+CFLAGS   = $(INCS) -std=gnu++2a -g3
+DEL      = D:\downloads\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../_obj/RoomsWindow.o: Source/RoomsWindow.cpp
+	$(CPP) -c Source/RoomsWindow.cpp -o ../_obj/RoomsWindow.o $(CXXFLAGS)
+
+../_obj/Presentation.o: Source/Presentation.cpp
+	$(CPP) -c Source/Presentation.cpp -o ../_obj/Presentation.o $(CXXFLAGS)
+
+../_obj/GlobalWindow.o: Source/GlobalWindow.cpp
+	$(CPP) -c Source/GlobalWindow.cpp -o ../_obj/GlobalWindow.o $(CXXFLAGS)
+
+../_obj/SubjectGroupsWindow.o: Source/SubjectGroupsWindow.cpp
+	$(CPP) -c Source/SubjectGroupsWindow.cpp -o ../_obj/SubjectGroupsWindow.o $(CXXFLAGS)
+
+../_obj/TeachersWindow.o: Source/TeachersWindow.cpp
+	$(CPP) -c Source/TeachersWindow.cpp -o ../_obj/TeachersWindow.o $(CXXFLAGS)
+
+../_obj/SubjectsWindow.o: Source/SubjectsWindow.cpp
+	$(CPP) -c Source/SubjectsWindow.cpp -o ../_obj/SubjectsWindow.o $(CXXFLAGS)
+
+../_obj/ClassesWindow.o: Source/ClassesWindow.cpp
+	$(CPP) -c Source/ClassesWindow.cpp -o ../_obj/ClassesWindow.o $(CXXFLAGS)
+
+../_obj/Presentation_private.res: Presentation_private.rc 
+	$(WINDRES) -i Presentation_private.rc --input-format=rc -o ../_obj/Presentation_private.res -O coff 
+

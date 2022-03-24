@@ -1,0 +1,38 @@
+# Project: Service
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = ../_obj/Service_private.res
+OBJ      = ../_obj/Controller.o ../_obj/Service.o $(RES)
+LINKOBJ  = ../_obj/Controller.o ../_obj/Service.o $(RES)
+LIBS     = -L"D:/downloads/Dev-Cpp/TDM-GCC-64/lib" -L"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -Wl,--stack,268435456 ../../_Executable/DataManagers.dll -g3
+INCS     = -I"D:/downloads/Dev-Cpp/TDM-GCC-64/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Lenovo 330/Desktop/FinalProject2/DataManagers" -I"D:/Lenovo 330/Desktop/FinalProject2/Functions" -I"D:/Lenovo 330/Desktop/FinalProject2" -I"D:/Lenovo 330/Desktop/FinalProject2/Service" -I"D:/Lenovo 330/Desktop/FinalProject2/Structures" -I"D:/Lenovo 330/Desktop/FinalProject2/Models"
+CXXINCS  = -I"D:/downloads/Dev-Cpp/TDM-GCC-64/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/downloads/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"D:/Lenovo 330/Desktop/FinalProject2/DataManagers" -I"D:/Lenovo 330/Desktop/FinalProject2/Functions" -I"D:/Lenovo 330/Desktop/FinalProject2" -I"D:/Lenovo 330/Desktop/FinalProject2/Service" -I"D:/Lenovo 330/Desktop/FinalProject2/Structures" -I"D:/Lenovo 330/Desktop/FinalProject2/Models"
+BIN      = ../../_Executable/Service.dll
+CXXFLAGS = $(CXXINCS) -std=gnu++2a -g3
+CFLAGS   = $(INCS) -std=gnu++2a -g3
+DEL      = D:\downloads\Dev-Cpp\devcpp.exe INTERNAL_DEL
+DEF      = ../../_Executable/libService.def
+STATIC   = ../../_Executable/libService.a
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN) $(DEF) $(STATIC)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) -shared $(LINKOBJ) -o $(BIN) $(LIBS) -Wl,--output-def,$(DEF),--out-implib,$(STATIC),--add-stdcall-alias
+
+../_obj/Controller.o: Source/Controller.cpp
+	$(CPP) -c Source/Controller.cpp -o ../_obj/Controller.o $(CXXFLAGS)
+
+../_obj/Service.o: Source/Service.cpp
+	$(CPP) -c Source/Service.cpp -o ../_obj/Service.o $(CXXFLAGS)
+
+../_obj/Service_private.res: Service_private.rc 
+	$(WINDRES) -i Service_private.rc --input-format=rc -o ../_obj/Service_private.res -O coff 
+
