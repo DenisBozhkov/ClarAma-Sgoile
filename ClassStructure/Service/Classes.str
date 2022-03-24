@@ -1,0 +1,39 @@
+class $Controller
+inherits none end
+consistof
+	constructor(public)
+	param none end
+	
+	destructor(public)
+	
+	field @Classes(public,$ClassesManager*)
+	field @MultiClassSubjects(public,$MultiClassSubjectsManager*)
+	field @Rooms(public,$RoomsManager*)
+	field @SubjectGroups(public,$SubjectGroupsManager*)
+	field @Subjects(public,$SubjectsManager*)
+	field @Teachers(public,$TeachersManager*)
+	
+	method @SaveAll(public,void)
+	param none end
+end
+class $Schedule
+inherits none end
+consistof
+	constructor(public,default)
+	param none end
+	
+	constructor(public)
+	param
+		@daysCount(byte)
+		@hoursPerDay(byte)
+	end
+	
+	field @schedule(vector<vector<vector<ScheduleData*>>>)
+	
+	method @At(public,ScheduleData*&)
+	param
+		@classIndex(byte)
+		@day(byte)
+		@hour(byte)
+	end
+end

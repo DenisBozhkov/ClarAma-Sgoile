@@ -1,0 +1,203 @@
+class $ClassModel
+inherits $IModel<uint>(public) end
+consistof
+	constructor(public)
+	param none end
+	
+	constructor(public)
+	param
+		@id(uint)
+		@number(byte)
+		@letter(char)
+		@startTurn($Turn)
+		@formMaster($TeacherModel*)
+	end
+	
+	constructor(public)
+	param
+		@number(byte)
+		@letter(char)
+		@startTurn($Turn)
+		@formMaster($TeacherModel*)
+	end
+	
+	field @Number(public,byte)
+	field @Letter(public,char)
+	field @StartTurn(public,$Turn)
+	field @FormMaster(public,$TeacherModel*)
+	field @Subjects(public,vector<$ClassSubjectModel*>)
+	field @nextId(private static,uint,0)
+	
+	method @SetNextId(public static,void)
+	param @id(uint) end
+end
+
+class $ClassSubjectModel
+inherits @IModel<uint>(protected virtual) end
+consistof
+	constructor(public)
+	param none end
+	
+	constructor(public)
+	param
+		@subject($SubjectModel*)
+		@classesPerWeek(float)
+	end
+	
+	field @Subject(public,$SubjectModel*)
+	field @ClassesPerWeek(public,float)
+	field @Teachers(public,vector<$TeachersModel*>)
+	field @Rooms(public,vector<$RoomsModel*>)
+end
+
+class $MultiClassSubjectModel
+inherits 
+	$IModel<uint>(public virtual)
+	$ClassSubjectModel(public virtual)
+end	
+consistof
+	constructor(public)
+	param none end
+	
+	constructor(public)
+	param
+		@id(uint)
+		@subject($SubjectModel*)
+		@classesPerWeek(float)
+	end
+	
+	constructor(public)
+	param
+		@subject($SubjectModel*)
+		@classesPerWeek(float)
+	end
+	
+	field @Classes(public,vector<$ClassModel*>)
+	field @nextId(private static,uint,0)
+	
+	method @SetNextId(public,void)
+	param none end
+end
+
+class $RoomModel
+inherits $IModel<uint>(public) end
+consistof
+	constructor(public)
+	param none end
+	
+	constructor(public)
+	param
+		@id(uint)
+		@name(string)
+		@maxClasses(byte)
+		@type($RoomType)
+	end
+	
+	constructor(public)
+	param
+		@name(string)
+		@maxClasses(byte)
+		@type($RoomType)
+	end
+	
+	field @Name(public,string)
+	field @MaxClasses(public,byte)
+	field @Type(public,$RoomType)
+	field @nextId(private static,uint,0)
+	
+	method @SetNextId(public static,void)
+	param none end
+end
+
+class $SubjectGroupModel
+inherits $IModel<uint> end
+consistof
+	constructor(public)
+	param none end
+	
+	constructor(public)
+	param
+		@id(uint)
+		@name(string)
+		@maxClassesPerDay(byte)
+		@everyDay(bool)
+	end
+	
+	constructor(public)
+	param
+		@name(string)
+		@maxClassesPerDay(byte)
+		@everyDay(bool)
+	end
+	
+	field @Name(public,string)
+	field @MaxClassesPerDay(public,byte)
+	field @EveryDay(public,bool)
+	field @nextId(private static,uint,0)
+	
+	method @SetNextId(public static,void)
+	param none end
+end
+
+class $SubjectModel
+inherits @IModel<uint>(public) end
+consistof
+	constructor(public)
+	param none end
+	
+	constructor(public)
+	param
+		@id(uint)
+		@name(string)
+		@type($SubjectType)
+		@maxClassesPerDay(byte)
+	end
+	
+	constructor(public)
+	param
+		@name(string)
+		@type($SubjectType)
+		@maxClassesPerDay(byte)
+	end
+	
+	field @Name(public,string)
+	field @Type(public,$SubectType)
+	field @MaxClassesPerDay(public,byte)
+	field @Groups(public,vector<$SubjectGroupModel*>)
+	field @nextId(private static,uint,0)
+	
+	method @SetNextId(public static,void)
+	param none end
+end
+
+class $TeacherModel
+inherits @IModel<uint>(public) end
+consistof
+	constructor(public)
+	param none end
+	
+	constructor(public)
+	param
+		@id(uint)
+		@number(byte)
+		@name(string)
+		@days(byte)
+		@hours(byte)
+	end
+	
+	constructor(public)
+	param
+		@number(byte)
+		@name(string)
+		@days(byte)
+		@hours(byte)
+	end
+	
+	field @Number(public,byte)
+	field @Name(public,string)
+	field @IsFree(public,vector<vector<bool>>)
+	field @nextId(private static,uint,0)
+	
+	method @SetNextId(public static,void)
+	param none end
+end

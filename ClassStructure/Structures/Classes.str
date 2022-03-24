@@ -1,0 +1,82 @@
+class $ModelSet<$K,$T>
+inherits $IStructure<$K,$T>(public) end
+consistof
+	constructor(public)
+	param none end
+
+	field @size(private,uint)
+	field @models(private,map<K,T*>)
+	field @it(private,map<K,T*>::iterator)
+	
+	method @Add(public,void)
+	param @model($T*) end
+	
+	method @Get(public,$T*)
+	param @id($K) end
+	
+	method @Delete(public,void)
+	param @id($K) end
+	
+	method @ToVector(public,vector<$T*>)
+	param none end
+	
+	method @Size(public,uint)
+	param none end
+	
+	method @Begin(public,$T*)
+	param none end
+	
+	method @Next(public,$T*)
+	param none end	
+end
+class $SmallSet
+inherits none end
+consistof
+	constructor(public)
+	param none end
+	
+	constructor(public)
+	param @vec(vector<int>) end
+	
+	constructor(private)
+	param
+		@map1(llong)
+		@map2(llong)
+	end
+	
+	field @map1(private,llong)
+	field @map2(private,llong)
+	
+	method @Add(public,void)
+	param @index(byte) end
+	
+	method @Add(public,$SmallSet)
+	param @smallSet($SmallSet) end
+	
+	method @Change(public,void)
+	param @index(byte) end
+	
+	method @Change(public,$SmallSet)
+	param @smallSet($SmallSet) end
+	
+	method @Remove(public,void)
+	param @index(byte) end
+	
+	method @Remove(public,$SmallSet)
+	param @smallSet($SmallSet) end
+	
+	method @At(public,bool)
+	param @index(byte) end
+	
+	method @Intersect(public,$SmallSet)
+	param @smallSet($SmallSet) end
+	
+	method @Merge(public,$SmallSet)
+	param @smallSet($SmallSet) end
+	
+	method @IsEmpty(public,bool)
+	param none end
+	
+	method @ToVector(public,vector<byte>)
+	param none end
+end

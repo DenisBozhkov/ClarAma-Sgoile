@@ -1,0 +1,11 @@
+interface $IDataManager<$K,$T,$S>
+consistof
+	field @Models(public,$S<$K,$T>)
+	const @saveDir(protected,path,"Save/Saved")
+	
+	method @Read(public abstract,void)
+	param none end
+	
+	method @Save(public abstract,void)
+	param none end
+end

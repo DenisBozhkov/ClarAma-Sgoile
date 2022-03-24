@@ -1,0 +1,95 @@
+class $TeachersManager
+inherits $IDataManager<uint,$Teacher,$ModelSet<uint,$Teacher>>(public) end
+consistof
+	method @Read(public,void)
+	param none end
+	
+	method @Save(public,void)
+	param none end
+end
+class $SubjectsManager
+inherits $IDataManager<uint,$Subject,$ModelSet<uint,$Subject>>(public) end
+consistof
+	constructor(public)
+	param @subjectGroups($SubjectGroupManager&) end
+
+	field @subjectGroups(private,$SubjectGroupManager&)
+
+	method @Read(public,void)
+	param none end
+	
+	method @Save(public,void)
+	param none end
+end
+class $ClassesManager
+inherits $IDataManager<uint,$Class,$ModelSet<uint,$Class>>(public) end
+consistof
+	constructor(public)
+	param
+		@subjects($SubjectsManager&)
+		@teachers($TeachersManager&)
+		@rooms($RoomsManager&)
+	end
+	
+	field @rooms(private,$RoomsManager&)
+	field @subjects(private,$SubjectsManager&)
+	field @teachers(private,$TeachersManager&)
+	
+	method @Read(public,void)
+	param none end
+	
+	method @Save(public,void)
+	param none end
+end
+class $RoomsManager
+inherits $IDataManager<uint,$Room,$ModelSet<uint,$Room>>(public) end
+consistof
+	method @Read(public,void)
+	param none end
+	
+	method @Save(public,void)
+	param none end
+end
+class $SubjectGroupsManager
+inherits $IDataManager<uint,$SubjectGroup,$ModelSet<uint,$SubjectGroup>>(public) end
+consistof
+	method @Read(public,void)
+	param none end
+	
+	method @Save(public,void)
+	param none end
+end
+class $MultiClassSubjectsManager
+inherits $IDataManager<uint,$MultiClassSubject,$ModelSet<uint,$MultiClassSubject>>(public) end
+consistof
+	constructor(public)
+	param
+		@classesManager($ClassesManager&) 
+		@subjects($SubjectsManager&)
+		@teachers($TeachersManager&)
+		@rooms($RoomsManager&)
+	end
+	
+	field @classes(private,$ClassesManager&);
+	field @rooms(private,$RoomsManager&)
+	field @subjects(private,$SubjectsManager&)
+	field @teachers(private,$TeachersManager&)
+	
+	method @Read(public,void)
+	param none end
+	
+	method @Save(public,void)
+	param none end
+end
+package $SchoolData
+consistof
+	variable @DaysCount(byte)
+	variable @HoursPerDay(byte)
+	variable @HoursPerTurn(byte)
+
+	procedure @Read(public)
+	param none end
+	
+	procedure @Save(public)
+	param none end
+end

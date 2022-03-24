@@ -1,0 +1,16 @@
+enum $SubjectType
+consistof
+	const @ST_A
+	const @ST_B
+	const @ST_C
+end
+enum $Turn
+consistof
+	const @T_First(0)
+	const @T_Second(1)
+end
+enum $RoomType
+consistof
+	const @RT_Normal
+	const @RT_Computer
+end

@@ -1,0 +1,26 @@
+interface $Structure<$K,$T>
+consistof
+	typedef $KeyType($K)
+	typedef $ValueType($T)
+	
+	method @Add(public abstract,void)
+	param ($T*) end
+	
+	method @Get(public abstract,$T*)
+	param ($K) end
+	
+	method @Delete(public abstract,void)
+	param ($K) end
+	
+	method @ToVector(public abstract,vector<$T*>)
+	param none end
+	
+	method @Size(public abstract,uint)
+	param none end
+	
+	method @Begin(public abstract,$T*)
+	param none end
+	
+	method @Next(public abstract,$T*)
+	param none end		
+end

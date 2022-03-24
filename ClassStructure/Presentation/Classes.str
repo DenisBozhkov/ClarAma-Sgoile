@@ -1,0 +1,74 @@
+class $GlobalWindow
+inherits
+	$Window(public)
+	$IActionable(public)
+end
+consistof
+	constructor(public)
+	param @controller($Controller&) end	
+	destructor(public)
+
+	field @roomsWindow(private,$RoomsWindow*)
+	
+	method @Create(public,void)
+	param none end
+	method @InitCompotents(protected,void)
+	param none end
+	method @InitConsts(protected,void)
+	param none end
+	method @InitRelations(protected,void)
+	param none end
+	method @LoadData(protected,void)
+	param none end
+end
+class $RoomsWindow
+inherits
+	$Window(public)
+	$IActionable(public)
+end
+consistof
+	constructor(public)
+	param @controller($Controller&) end
+	
+	method @Create(public virtual,void)
+	param none end
+	
+	field @controller(private,$Controller&)
+	field @nameLabel(private,$Label)
+	field @nameEdit(private,$Edit)
+	field @maxClassesLabel(private,$Label)
+	field @maxClassesEdit(private,$NumberEdit)
+	field @typeLabel(private,$Label)
+	field @typeRadioButtonGroup(private,$RadioButtonGroup)
+	field @typesRadioButtons(private,$RadioButton[2])
+	field @roomsListBox(private,$ListBox)
+	field @addButton(private,$Button)
+	field @changeButton(private,$Button)
+	field @removeButton(private,$Button)
+	
+	method @InitComponents(protected,void)
+	param none end
+	method @InitRelations(protected,void)
+	param none end
+	method @InitConsts(protected,void)
+	param none end
+	method @LoadData(protected,void)
+	param none end
+	
+	method @clearInputs(private,void)
+	param none end
+	method @enableButtons(private,void)
+	param none end
+	
+	method @addButton_OnClick(private,void)
+	param none end
+	method @changeButton_OnClick(private,void)
+	param none end
+	method @removeButton_OnClick(private,void)
+	param none end
+	method @roomsListBox_OnSelect(private,void)
+	param none end
+	
+	method @getRoom(private,Room)
+	param @id(uint) end
+end

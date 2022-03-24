@@ -1,0 +1,13 @@
+interface $IModel<$IdType>
+consistof
+	constructor(deleted) 
+	param none end
+	
+	constructor(protected) 
+	param @Id($IdType) end
+	
+	field @id(private,$IdType)
+	
+	method @Id(public,$IdType) 
+	param none end
+end

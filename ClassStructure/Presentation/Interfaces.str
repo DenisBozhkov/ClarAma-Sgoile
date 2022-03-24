@@ -1,0 +1,17 @@
+interface $IActionable
+consistof
+	constructor(protected)
+	param @controller($Controller&) end
+	
+	field @OnLoad(public,function(void,param void* end))
+	field @controller(protected,$Controller&);
+	
+	method @InitComponents(protected abstract,void)
+	param none end
+	method @InitConsts(protected abstract,void)
+	param none end
+	method @InitRelations(protected abstract,void)
+	param none end
+	method @LoadData(protected abstract,void)
+	param none end
+end

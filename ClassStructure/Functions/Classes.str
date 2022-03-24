@@ -1,0 +1,31 @@
+package $Convert
+consistof
+	function @ToWString(wstring)
+	param @wstr(string) end
+	
+	function @ToString(string)
+	param @str(wstring) end
+	
+	function @ToString(string)
+	param @number(int) end
+	
+	function @ToString(string)
+	param @number(double) end
+	
+	function @ToInt(int)
+	param @str(string) end
+	
+	function @ToDouble(double)
+	param @str(string) end
+	
+	template<EnumType> @ToEnum(EnumType)
+	param @str(string) end
+end
+package $Control
+consistof
+	function @Throw(bool)
+	param @message(string) end
+	
+	procedure @Exit
+	param @code(int) end
+end
