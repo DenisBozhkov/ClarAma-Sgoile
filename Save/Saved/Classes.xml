@@ -1,0 +1,22 @@
+<Classes>
+	<Class Id="0" Number="5" Letter="a" StartTurn="0" FormMaster="0">
+		<ClassSubject SubjectId="0" ClassesPerWeek="3">
+			<Teacher Id="0"></Teacher>
+			<Room Id="1"></Room>
+		</ClassSubject>
+		<ClassSubject SubjectId="1" ClassesPerWeek="1">
+			<Teacher Id="2"></Teacher>
+			<Room Id="1"></Room>
+		</ClassSubject>
+	</Class>
+	<Class Id="1" Number="5" Letter="b" StartTurn="0" FormMaster="2">
+		<ClassSubject SubjectId="0" ClassesPerWeek="3">
+			<Teacher Id="0"></Teacher>
+			<Room Id="3"></Room>
+		</ClassSubject>
+		<ClassSubject SubjectId="1" ClassesPerWeek="1">
+			<Teacher Id="2"></Teacher>
+			<Room Id="3"></Room>
+		</ClassSubject>
+	</Class>
+</Classes>

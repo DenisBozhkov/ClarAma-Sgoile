@@ -1,0 +1,10 @@
+<Rooms>
+	<Room Id="0" Name="100" MaxClasses="2" Type="0"></Room>
+	<Room Id="1" Name="101" MaxClasses="1" Type="0"></Room>
+	<Room Id="2" Name="102" MaxClasses="1" Type="0"></Room>
+	<Room Id="3" Name="103" MaxClasses="1" Type="0"></Room>
+	<Room Id="4" Name="104" MaxClasses="1" Type="1"></Room>
+	<Room Id="5" Name="105" MaxClasses="1" Type="0"></Room>
+	<Room Id="6" Name="106" MaxClasses="1" Type="0"></Room>
+	<Room Id="7" Name="107" MaxClasses="1" Type="0"></Room>
+</Rooms>

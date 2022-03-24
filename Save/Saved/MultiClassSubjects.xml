@@ -1,0 +1,7 @@
+<MultiClassSubjects>
+	<MultiClassSubject Id="0" SubjectId="2" ClassesPerWeek="3">
+		<Teacher Id="0"></Teacher>
+		<Teacher Id="1"></Teacher>
+		<Teacher Id="2"></Teacher>
+	</MultiClassSubject>
+</MultiClassSubjects>

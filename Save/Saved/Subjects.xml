@@ -1,0 +1,24 @@
+<Subjects>
+	<Subject Id="0" Name="Subject1" Type="0" MaxClassesPerDay="1">
+		<Group Id="2"></Group>
+		<Group Id="6"></Group>
+	</Subject>
+	<Subject Id="1" Name="Subject2" Type="2" MaxClassesPerDay="2">
+		<Group Id="0"></Group>
+		<Group Id="5"></Group>
+		<Group Id="6"></Group>
+	</Subject>
+	<Subject Id="2" Name="Subject3" Type="1" MaxClassesPerDay="0">
+		<Group Id="1"></Group>
+		<Group Id="4"></Group>
+	</Subject>
+	<Subject Id="3" Name="Subject4" Type="2" MaxClassesPerDay="0">
+		<Group Id="1"></Group>
+		<Group Id="6"></Group>
+	</Subject>
+	<Subject Id="4" Name="Subject5" Type="1" MaxClassesPerDay="2">
+		<Group Id="2"></Group>
+		<Group Id="3"></Group>
+		<Group Id="4"></Group>
+	</Subject>
+</Subjects>

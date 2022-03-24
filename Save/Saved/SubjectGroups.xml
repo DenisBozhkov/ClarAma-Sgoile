@@ -1,0 +1,9 @@
+<SubjectGroups>
+	<SubjectGroup Id="0" Name="Group1" MaxClassesPerDay="2" EveryDay="0"></SubjectGroup>
+	<SubjectGroup Id="1" Name="Group2" MaxClassesPerDay="1" EveryDay="1"></SubjectGroup>
+	<SubjectGroup Id="2" Name="Group3" MaxClassesPerDay="4" EveryDay="0"></SubjectGroup>
+	<SubjectGroup Id="3" Name="Group4" MaxClassesPerDay="0" EveryDay="1"></SubjectGroup>
+	<SubjectGroup Id="4" Name="Group5" MaxClassesPerDay="0" EveryDay="0"></SubjectGroup>
+	<SubjectGroup Id="5" Name="Group6" MaxClassesPerDay="0" EveryDay="0"></SubjectGroup>
+	<SubjectGroup Id="6" Name="Group7" MaxClassesPerDay="3" EveryDay="1"></SubjectGroup>
+</SubjectGroups>

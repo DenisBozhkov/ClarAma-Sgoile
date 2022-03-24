@@ -1,0 +1,27 @@
+<Teachers>
+	<Teacher Id="0" Number="1" Name="Test1">
+		<NotFree Day="1" Hour="4"></NotFree>
+		<NotFree Day="4" Hour="2"></NotFree>
+	</Teacher>
+	<Teacher Id="1" Number="2" Name="Test2">
+		<NotFree Day="0" Hour="0"></NotFree>
+		<NotFree Day="1" Hour="0"></NotFree>
+		<NotFree Day="2" Hour="0"></NotFree>
+		<NotFree Day="3" Hour="0"></NotFree>
+		<NotFree Day="4" Hour="0"></NotFree>
+	</Teacher>
+	<Teacher Id="2" Number="3" Name="Test3">
+		<NotFree Day="2" Hour="3"></NotFree>
+	</Teacher>
+	<Teacher Id="3" Number="4" Name="Test4">
+		<NotFree Day="0" Hour="0"></NotFree>
+		<NotFree Day="1" Hour="0"></NotFree>
+		<NotFree Day="2" Hour="0"></NotFree>
+		<NotFree Day="3" Hour="0"></NotFree>
+		<NotFree Day="4" Hour="0"></NotFree>
+	</Teacher>
+	<Teacher Id="4" Number="5" Name="Test5">
+		<NotFree Day="1" Hour="1"></NotFree>
+		<NotFree Day="2" Hour="3"></NotFree>
+	</Teacher>
+</Teachers>
